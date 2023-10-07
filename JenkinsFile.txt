@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    triggers {
+        cron('H 0 * * *') // Schedule to run at midnight (00:00) every day
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout your Git repository
+                checkout scm
+            }
+        }
+
+        stage('Run Python Script') {
+            steps {
+                sh 'python script.py' // Replace with the actual command to run your Python script
+            }
+        }
+    }
+}
