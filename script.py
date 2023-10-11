@@ -11,7 +11,7 @@ mongodb_uri = 'mongodb://localhost:27017/'
 db_name = 'testDB'
 flags_collection = 'flags'
 transfers_collection = "transfers"
-port = '8081'
+port = '3000'
 host = 'localhost'
 base_transfer_url = 'http://{}:{}/{}/add'  # Base URL for data transfer
 # Base URL for data update in transfer collection
@@ -21,8 +21,8 @@ base_get_by_id_url = 'http://{}:{}/{}/getById'  # Base URL for data retrieval
 
 
 # List of database names to handle
-# databases = ['personal', 'educationDetails', 'issues', 'posessions', 'project', 'leaves']
-databases = ['possessions']
+databases = ['personalDetails', 'educationDetails', 'issues', 'possessions', 'projects', 'leaves']
+# databases = ['possessions']
 
 # Establishing a connection to mongodb server
 try:
